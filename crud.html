@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create-read-update-delete</title>
+    <link href="crud.css"rel='stylesheet'>
+</head>
+
+<body>
+      <h1 id="head"><b>Student Form Fillup</b></h1>
+    <div class="container">
+        <form id="myform" name="myform" >
+            
+            <label for="name"style="padding:10px"><b>Your Name:</b></label>
+            <input type="text" name="myname" id="name" placeholder="Enter your name" required>
+            <label for="age"style="padding:10px"><b>Your Age:</b></label>
+            <input type="number" name="myage" id="age" placeholder="Enter your age" required>
+            <label for="rollno"style="padding:10px"><b>Your Rollno:</b></label>
+            <input type="number" name="myrollno." id="rollno" placeholder="Enter your rollno." required>
+            <label for="dateofbirth"style="padding:10px"><b>Date Of Birth:</b></label>
+            <input type="date" name="myd.o.b." id="dob" required>
+
+            
+            
+        </form>
+       
+        <button type="button" onclick="submit()" id="submits">submit</button>
+        <button type="button" onclick="update()" id="updates">update</button>
+        <h2>Search Item:-</h3>
+        
+
+        <input type="search" placeholder="Enter rollno:" id="myid">
+        <button type="button" onclick="search()"id="search">search</button>
+       
+
+
+        <h2 id="headings">Display Students list:-</h2>
+        <p id="para"> </p>
+       
+
+
+    </div>
+    <h1 class="searched-item">The search item is here:</h1>
+    <ul >
+       <li id="item2"> </li>
+    </ul>
+
+  <button type="button"id="reset" onclick="resetnow()">Delete all</button>
+
+
+    <script src="crud.js"></script>
+
+</body>
+
+</html>
